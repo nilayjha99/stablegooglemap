@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>test map for routes</name>
+    <description/>
+    <Style id="icon-1899-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-1267FF-5000-nodesc-normal">
+      <LineStyle>
+        <color>ffff6712</color>
+        <width>5</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-1267FF-5000-nodesc-highlight">
+      <LineStyle>
+        <color>ffff6712</color>
+        <width>7.5</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-1267FF-5000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-1267FF-5000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-1267FF-5000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Directions from B-22, 120 Feet Ring Rd, Gulbai Tekra, Ahmedabad, Gujarat 380006, India to Point 2</name>
+      <Placemark>
+        <name>Directions from B-22, 120 Feet Ring Rd, Gulbai Tekra, Ahmedabad, Gujarat 380006, India to Point 2</name>
+        <styleUrl>#line-1267FF-5000-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            72.54491,23.02737,0
+            72.54516,23.0276,0
+            72.54525,23.02769,0
+            72.54551,23.02795,0
+            72.54558,23.02801,0
+            72.54594,23.02836,0
+            72.54598,23.0284,0
+            72.54602,23.02844,0
+            72.54634,23.02876,0
+            72.54636,23.02878,0
+            72.54642,23.02884,0
+            72.5465,23.0288,0
+            72.54656,23.02876,0
+            72.54649,23.02869,0
+            72.54613,23.02834,0
+            72.54609,23.0283,0
+            72.54603,23.02824,0
+            72.54564,23.02784,0
+            72.54558,23.02778,0
+            72.54536,23.02756,0
+            72.54529,23.02749,0
+            72.54501,23.02727,0
+            72.54494,23.02719,0
+            72.54485,23.0271,0
+            72.5448,23.02704,0
+            72.54473,23.02709,0
+            72.54469,23.02711,0
+            72.54458,23.02718,0
+            72.5445,23.02724,0
+            72.54368,23.02777,0
+            72.54346,23.02794,0
+            72.543,23.02829,0
+            72.5429,23.02836,0
+            72.54296,23.02843,0
+            72.54297,23.02842,0
+            72.54304,23.02837,0
+            72.54363,23.02794,0
+            72.54401,23.02803,0
+            72.54446,23.02814,0
+            72.54461,23.02818,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>B-22, 120 Feet Ring Rd, Gulbai Tekra, Ahmedabad, Gujarat 380006, India</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            72.544908,23.02737,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Point 2</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            72.5446063,23.0281758,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

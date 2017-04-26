@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJUZlNkvC6ZzkF2MGCYCWZtghCY0GeLsM&v=3.exp"></script>
+<script async defer src="/geoxml3-master/polys/geoxml3.js"></script>
+<script async defer src="/geoxml3-master/ProjectedOverlay.js"></script>
+
+    <script>
+        var markerarray = []
+        var myLatLng = {lat: 23.02808, lng: 72.54422};
+        var map=""
+        function initialize() {
+
+            var options = {
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            map = new google.maps.Map(document.getElementById("canvas"), options);
+            var parser = new geoXML3.parser({map: map, processStyles: true});
+            parser.parse("qw.kml");
+        }
+        function addmarker(){
+          var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+        markerarray.push(marker)
+        }
+
+        function removemarker(){
+          for(i=0; i<markerarray.length; i++){
+            markerarray[i].setMap(null);
+          }
+        }
+    </script>
+    <button onclick="initialize()">load map from kml</button>
+    <button onclick="addmarker()">add marker</button>
+    <button onclick="removemarker()"> remove marker</button>
+    <div id="canvas" style="width:500px; height:500px"></div>
+<body>
+<html>
